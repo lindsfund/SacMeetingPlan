@@ -8,11 +8,14 @@
 
 
 <p>
+    <a asp-action="Create">Create New with NO speakers</a>
+</p>
+<form action="/MeetingPlans/Create" method="get">
     @*How to get the number from this input and send it to the URL*@
     <label for="speakerNumber">Number of speakers: </label>
     <input type="number" id="speakerNumber" name="speakerNumber" min="0" />
-    <a asp-action="Create">Create New</a>
-</p>
+    <input type = "submit" value="Create with speakers"></input>
+</form>
 
 <table class="table">
     <thead>
